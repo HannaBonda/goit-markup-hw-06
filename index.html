@@ -415,14 +415,25 @@
           </li>
         </ul>
       </div>
-    </div>
-    <form action="">
-      <label for="">
-        <input type="text">
-      </label>
+      <form autocomplete="off" class="footer-form">
+        <p class="footer-modal-topic">Subscribe</p>
+        <div class="footer-modal-form">          
+        <input type="email"
+        name="user_email"
+        class="footer-modal-input"
+        placeholder="E-mail"
+        required>
+        <button type="submit" class="footer-submit">Subscribe
+          <svg width="24" height="20" class="footer-icon-submit">
+            <use href="./images/sprite.svg#icon-subscribe"></use>
+          </svg>
+        </button>
+        
+       </div>          
     </form>
+    </div>    
     </footer>
-    <div class="backdrop" data-modal>
+    <div class="backdrop is-hidden" data-modal>
       <div class="modal">
         <button type="button" class="modal-btn-close" data-modal-close>
           <svg width="8" height="8" class="modal-icon-btn">
